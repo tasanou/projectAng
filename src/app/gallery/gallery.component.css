@@ -1,0 +1,29 @@
+.cadre{
+  height: 200px;
+  width: 250px;
+  margin: 10px 10px;
+
+}
+#cer{
+  border-top: 15px;
+}
+.colo{
+  background-color: gray;
+}
+.butt {
+  padding: 1px 1px;
+
+}
+.button {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+

@@ -1,0 +1,33 @@
+<p></p>
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading"> Gallery Component</div>
+        <div class="panel-body">
+            <form #f="ngForm" (ngSubmit)="onSearch()">
+                <div class="form-group">
+                    <label> Mot Clé: </label>
+                    <input name="motCle" ngModel required type="text">
+                    <button class="btn btn-primary" type="submit">Chercher</button>
+                </div>
+            </form>
+            <div class="row">
+                <form *ngIf="pagePhoto">
+                    <mat-list *ngFor="let me of pagePhoto.items">
+                        <div fxLayout="row">
+                            <div fxFlex="280px"><img class="cadre" src="{{me.owner.avatar_url}}"></div>
+                            <div fxFlex="100px" class="align-middle">
+                                <div class="container" id="cer">
+                                <div matLine> {{me.name}}</div>
+                                <div matLine>{{me.description}}</div> <div>
+                                    <div class="button" matLine> Stars : {{me.stargazers_count}}</div>
+                                    <div class="button" matLine> issues: {{me.open_issues}} </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-list>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

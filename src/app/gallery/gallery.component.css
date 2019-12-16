@@ -1,3 +1,8 @@
+.ib{
+  border: 2px solid black;
+  /*margin-left: 0px;*/
+  /*margin-right: 0px;*/
+}
 .cadre{
   height: 200px;
   width: 250px;
@@ -25,5 +30,91 @@
   margin: 4px 2px;
   cursor: pointer;
 }
+body {
+  border: 3px solid #252525;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "segoe ui", "helvetica", "tahoma", "arial", sans-serif;
+}
 
+header {
+  border-bottom: 3px solid #252525;
+  border-top: 3px solid #252525;
+  background-color: #c1c1c1;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+header .row {
+  flex: 1;
+  margin: 0 1rem;
+}
+
+header .row.title {
+  text-align: center;
+  font-weight: 500;
+}
+
+header .row.content {
+  display: flex;
+  align-items: center;
+}
+
+header .row.content #actions {
+  color: #fff;
+}
+
+header .row #actions .fa {
+  -webkit-text-stroke: 3px #252525;
+  text-stroke: 3px #252525;
+  font-size: 25px;
+}
+
+header .row.content #address {
+  min-width: 4rem;
+  flex: 1;
+  display: flex;
+}
+
+header .row #actions .fa {
+  margin-left: .3rem;
+}
+
+header .row.content #search {
+  min-width: 3rem;
+  display: flex;
+}
+
+header .row section input {
+  width: 100%;
+  border: 3px solid #252525;
+  padding: .3rem .5rem;
+  border-radius: .2rem;
+}
+
+header .row.content #search input {
+  border-radius: 1rem;
+}
+
+header .row section + section {
+  margin-left: 1rem;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  width: 100%;
+  height: 4rem;
+  background-color: #c1c1c1;
+  border-top: 3px solid #252525;
+ margin-right: 0px;
+}
 

@@ -1,33 +1,73 @@
-<p></p>
+
+<!--<div class="container">-->
+<!--    <div class="panel panel-primary">-->
+<!--        <div class="panel-heading" id="her"> *</div>-->
+<!--        <div class="panel-body">-->
+<!--            <form #f="ngForm" (ngSubmit)="onSearch()">-->
+<!--                <div class="form-group">-->
+<!--                    <label> Mot Clé: </label>-->
+<!--                    <input name="motCle" ngModel required type="text">-->
+<!--                  -->
+<!--
+</div>-->
+<div class="container ib">
+<header>
+    <div class="row title">Trending Repos</div>
+    <div class="row content">
+        <section id="actions">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            <i class="fa fa-times" aria-hidden="true"></i>
+            <i class="fa fa-home" aria-hidden="true"></i>
+        </section>
+        <section id="address">
+            <input type="text" />
+        </section>
+        <section id="search">
+           <div class="button" style="width: 40px">
+            <i class="fa fa-search" aria-hidden="true"></i>
+           </div>
+        </section>
+    </div>
+    <div class="row empty"></div>
+</header>
+<main></main>
+<div>
 <div class="container">
-    <div class="panel panel-primary">
-        <div class="panel-heading"> Gallery Component</div>
-        <div class="panel-body">
-            <form #f="ngForm" (ngSubmit)="onSearch()">
-                <div class="form-group">
-                    <label> Mot Clé: </label>
-                    <input name="motCle" ngModel required type="text">
-                    <button class="btn btn-primary" type="submit">Chercher</button>
-                </div>
-            </form>
-            <div class="row">
-                <form *ngIf="pagePhoto">
-                    <mat-list *ngFor="let me of pagePhoto.items">
-                        <div fxLayout="row">
-                            <div fxFlex="280px"><img class="cadre" src="{{me.owner.avatar_url}}"></div>
-                            <div fxFlex="100px" class="align-middle">
-                                <div class="container" id="cer">
-                                <div matLine> {{me.name}}</div>
-                                <div matLine>{{me.description}}</div> <div>
-                                    <div class="button" matLine> Stars : {{me.stargazers_count}}</div>
-                                    <div class="button" matLine> issues: {{me.open_issues}} </div>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </mat-list>
-                </form>
-            </div>
-        </div>
+    <div fxLayout="row">
+        <form *ngIf="pagePhoto">
+            <mat-list *ngFor="let me of pagePhoto.items">
+                <mat-list-item>
+                    <div class="col-sm-4">
+                        <img class="cadre" src="{{me.owner.avatar_url}}">
+                    </div>
+                    <!--                            <div fxFlex="100px" class="align-middle">-->
+                    <!--                                <div class="container" id="cer">-->
+
+                    <div class="offset-sm-2 col-sm-6">
+                        <div matLine> {{me.name}}</div>
+                        <div matLine>{{me.description}}</div> <div>
+                        <div class="button" matLine> Stars : {{me.stargazers_count}}</div>
+                        <div class="button" matLine> issues: {{me.open_issues}} </div> Submitted 30 days ago by {{me.name}}
+
+                    </div>
+                    </div>
+                </mat-list-item>
+            </mat-list>
+        </form>
     </div>
 </div>
+</div>
+<footer></footer>
+<!--<div class="jumbotron" style="background-color: #A9A9A9">-->
+<!--    <div class="container">-->
+<!--        <div  class="row">-->
+<!--                <input style="width: 60% " type="text" >-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+</div>
+
+
+
+s

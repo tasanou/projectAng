@@ -13,7 +13,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import 'hammerjs';
-
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 
 @NgModule({
@@ -28,7 +28,7 @@ import 'hammerjs';
         MatListModule,
         MatGridListModule,
         MatCardModule,
-        MatButtonModule
+        MatButtonModule, AngularFontAwesomeModule
     ],
   providers: [],
   bootstrap: [AppComponent]

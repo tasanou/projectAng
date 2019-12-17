@@ -15,6 +15,9 @@
 .colo{
   background-color: gray;
 }
+.ibm{
+  display: flex;
+}
 .butt {
   padding: 1px 1px;
 

@@ -22,14 +22,14 @@
 <main></main>
 <div>
 <div class="container">
-    <div fxLayout="row">
+    <div class="row">
         <form *ngIf="pagePhoto">
             <mat-list *ngFor="let me of pagePhoto.items">
                 <mat-list-item>
-                    <div class="col-xs col-sm col-md">
+                    <div class="col-4">
                         <img class="cadre" src="{{me.owner.avatar_url}}">
                     </div>
-                    <div class="offset-2 col-xs col-sm col-md ">
+                    <div class="col-6">
                         <div matLine> {{me.name}}</div>
                         <div matLine>{{me.description}}</div> <div>
                         <div class="button" matLine> Stars : {{me.stargazers_count}}</div>
